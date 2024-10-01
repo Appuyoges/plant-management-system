@@ -3,14 +3,7 @@
     HortusFox
 </h1>
 
-<p align="center">
-    A self-hosted collaborative plant management system<br/>
-    (C) 2023 - 2024 by Daniel Brendel
-</p>
 
-<p align="center">
-    <a href="https://www.hortusfox.com/">www.hortusfox.com</a>
-</p>
 
 <p align="center">
     <img src="https://img.shields.io/badge/web-php-orange" alt="web-php"/>
@@ -19,16 +12,9 @@
     <img src="https://img.shields.io/badge/maintained-yes-green" alt="maintained-yes"/>
 </p>
 
-<p align="center">
-    <a href="https://discord.gg/kc6xGmjzVS"><img src="https://img.shields.io/badge/discord-5715BA?style=for-the-badge&logo=discord&logoColor=white" alt="social-discord"></a>
-    <a href="https://www.reddit.com/r/hortusfox/"><img src="https://img.shields.io/badge/reddit-D1550A?style=for-the-badge&logo=reddit&logoColor=white" alt="social-reddit"></a>
-    <a href="https://www.youtube.com/@HortusFox"><img src="https://img.shields.io/badge/youtube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="social-youtube"></a>
-    <a href="https://www.instagram.com/hortusfox/"><img src="https://img.shields.io/badge/instagram-blue?style=for-the-badge&logo=instagram&logoColor=white" alt="social-instagram"></a>
-</p>
 
-<p align="center">
-    <a href='https://ko-fi.com/C0C7V2ESD' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-</p>
+
+
 
 <p align="center">
     <img src="app/resources/gfx/screenshot-desktop.png"/><br/>
