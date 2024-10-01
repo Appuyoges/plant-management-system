@@ -5,14 +5,6 @@
 
 
 
-<p align="center">
-    <img src="https://img.shields.io/badge/web-php-orange" alt="web-php"/>
-    <img src="https://img.shields.io/badge/db-mysql-pink" alt="db-mysql"/>
-    <img src="https://img.shields.io/badge/license-MIT-blue" alt="license-mit"/>
-    <img src="https://img.shields.io/badge/maintained-yes-green" alt="maintained-yes"/>
-</p>
-
-
 
 
 
