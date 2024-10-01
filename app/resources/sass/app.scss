@@ -1,0 +1,2686 @@
+/*
+    app.scss
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(48, 52, 55);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.is-image-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: unset;
+}
+
+.column-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgb(250, 250, 250);
+}
+
+h2 {
+    font-size: 2.0em;
+    margin-bottom: 30px;
+    color: rgb(200, 200, 200);
+}
+
+.smaller-headline {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.is-default-link {
+    color: rgb(79, 134, 202);
+}
+
+.is-default-link:hover {
+    color: rgb(79, 134, 202);
+    text-decoration: underline;
+}
+
+.is-yellow-link {
+    color: rgb(156, 115, 67);
+}
+
+.is-yellow-link:hover {
+    color: rgb(156, 115, 67);
+    text-decoration: underline;
+}
+
+.is-fixed-button-link {
+    position: relative;
+    top: 5px;
+}
+
+.is-fixed-margin-left-mobile {
+    @media screen and (max-width: 512px) {
+        margin-left: 2px;
+    }
+}
+
+.is-default-text-color {
+    color: rgb(150, 150, 150);
+}
+
+.is-color-darker {
+    color: rgb(100, 100, 100);
+}
+
+.is-color-error {
+    color: rgb(154, 73, 69);
+}
+
+.is-input-dark {
+    background-color: rgba(90, 90, 90, 0.5);
+    color: rgb(200, 200, 200);
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.is-action-button-margin {
+    margin-right: 10px;
+    @media screen and (max-width: 376px) {
+        margin-right: 15px;
+    }
+    margin-bottom: 10px;
+}
+
+.is-underlined {
+    text-decoration: underline;
+}
+
+.is-stretched {
+    width: 100%;
+}
+
+.is-pointer {
+    cursor: pointer;
+}
+
+.is-centered {
+    text-align: center !important;
+}
+
+.is-indicator {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    left: 20px;
+    @media screen and (max-width: 1087px) {
+        top: 10px;
+        left: 22px;
+    }
+    background-color: rgb(223, 50, 50);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.is-indicator-tab {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    top: -4px;
+    left: -3px;
+    background-color: rgb(223, 50, 50);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.is-background-success-light {
+    background-color: rgb(215, 253, 200);
+}
+
+.is-chocolate {
+    background-color: rgb(179, 105, 62);
+    border-color: transparent;
+}
+
+.is-chocolate:hover {
+    background-color: rgb(167, 95, 55);
+    border-color: transparent;
+}
+
+.float-right {
+    float: right;
+}
+
+.belongs-to-previous-field {
+    position: relative;
+    top: -5px;
+    margin-bottom: 20px !important;
+}
+
+.is-next-to-elem {
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    @media screen and (max-width: 453px) {
+        top: -3px;
+        margin-bottom: 20px !important;
+        margin-left: unset;
+    }
+}
+
+.is-margin-bottom-20 {
+    margin-bottom: 20px !important;
+}
+
+.field small {
+    color: rgb(120, 120, 120);
+}
+
+.form-paragraph-modal a, .modal-anchors a {
+    color: rgb(52, 105, 215);
+}
+
+.form-paragraph-modal a:hover, .modal-anchors a:hover {
+    color: rgb(52, 105, 215);
+    text-decoration: underline;
+}
+
+.navbar-item a {
+    color: rgb(200, 200, 200);
+}
+
+.navbar-item a:hover {
+    color: rgb(250, 250, 250);
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background-color: rgba(255, 255, 255, 0.0) !important;
+    color: rgb(180, 180, 180) !important;
+}
+
+.navbar-item, .navbar-burger, .navbar-link {
+    color: rgb(190, 190, 190);
+}
+
+.navbar-dropdown {
+    background-color: rgb(50, 50, 48);
+    padding-top: unset;
+}
+
+.navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+@media screen and (max-width: 1087px) {
+    .navbar-menu {
+        background-color: rgb(50, 50, 48);
+    }
+}
+
+a.navbar-burger:hover {
+    color: rgb(200, 200, 200);
+}
+
+.navbar-start {
+    @media screen and (min-width: 1088px) {
+        flex-grow: 1;
+        justify-content: center;
+    }
+}
+
+.navbar-item-only-mobile {
+    @media screen and (min-width: 1089px) {
+        display: none;
+    }
+}
+
+.navbar-dropdown-minwidth {
+    @media screen and (min-width: 1089px) {
+        display: block;
+        top: 5px;
+        min-width: 135px;
+        text-align: center;
+    }
+}
+
+.navbar-dropdown-minwidth:not(.is-multiple):not(.is-loading)::after {
+    @media screen and (min-width: 1089px) {
+        top: 20px !important;
+    }
+}
+
+.navbar-item-brand-mobile-right {
+    @media screen and (max-width: 1087px) {
+        position: absolute;
+        top: 10px;
+        right: 45px;
+    }
+    @media screen and (min-width: 1089px) {
+        display: none;
+    }
+}
+
+.navbar.is-fixed-top-pwa {
+    @media screen and (max-width: 1087px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 30;
+    }
+}
+
+.column h1 {
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+#frmEditMultilineText textarea {
+    min-height: 200px;
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.banner-icon {
+    position: relative;
+    top: 210px;
+    left: 195px;
+}
+
+.banner-icon img {
+    width: 72px;
+    height: 72px;
+}
+
+.banner-accessory {
+    position: relative;
+    top: 172px;
+    right: -83%;
+}
+
+.banner-accessory img {
+    width: 256px;
+    height: 256px;
+}
+
+.content-inner {
+    position: relative;
+    padding: 15px;
+}
+
+.modal {
+    z-index: 105;
+}
+
+.modal-card {
+    color: rgb(150, 150, 150);
+}
+
+.modal-card-head {
+    background-color: rgb(55, 59, 62);
+    border-bottom: 1px solid rgb(59, 59, 59);
+}
+
+.modal-card-title {
+    color: rgb(190, 190, 190);
+}
+
+.modal-card-body {
+    background-color: rgb(48, 52, 55);
+}
+
+.modal-card-body label {
+    color: rgb(150, 150, 150);
+}
+
+.modal-card-body input, .modal-card-body select, .modal-card-body textarea, .modal-card-body table {
+    background-color: rgb(57, 59, 63);
+    color: rgb(150, 150, 150);
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.modal-card-body input::placeholder, .modal-card-body select::placeholder, .modal-card-body textarea::placeholder {
+    color: rgb(250, 250, 250);
+}
+
+.modal-card-body hr {
+    background-color: rgb(100, 100, 100);
+}
+
+.modal-card-foot {
+    background-color: rgb(50, 50, 50);
+    border-top: 1px solid rgb(59, 59, 59);
+}
+
+.fade {
+    transition: opacity 0.65s linear;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.app-padding-pwa {
+    @media screen and (max-width: 1087px) {
+        padding-top: 65px;
+        padding-bottom: 87px;
+    }
+    @media screen and (max-width: 768px) {
+        padding-top: 41px;
+        padding-bottom: 87px;
+    }
+}
+
+fieldset legend {
+    margin-bottom: 5px !important;
+}
+
+fieldset .field {
+    margin-bottom: unset !important;
+}
+
+.legend-title {
+    font-size: 1.2em;
+    margin-bottom: 15px !important;   
+}
+
+.notification-badge {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.notification-badge .notify-badge {
+    @media screen and (min-width: 1089px) {
+        position: absolute;
+        right: -7px;
+        top: 4px;
+    }
+    @media screen and (max-width: 1087px) {
+        position: relative;
+        right: -2px;
+        top: -10px;
+    }
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.9);
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+}
+
+.notify-badge .notify-badge-count {
+    position: relative;
+    top: -1px;
+}
+
+.dashboard-header {
+    position: relative;
+}
+
+.dashboard-welcome {
+    display: inline-block;
+}
+
+.dashboard-weather {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    float: right;
+    color: rgb(200, 200, 200);
+    @media screen and (max-width: 525px) {
+        top: -20px;
+        float: unset;
+    }
+}
+
+.dashboard-weather-content {
+    position: relative;
+    margin-top: 10px;
+    @media screen and (max-width: 525px) {
+        left: -10px;
+    }
+}
+
+.dashboard-weather-left {
+    position: relative;
+    display: inline-block;
+    left: 10px;
+    @media screen and (max-width: 525px) {
+        left: unset;
+    }
+}
+
+.dashboard-weather-right {
+    display: inline-block;
+    position: relative;
+    top: -32px;
+    @media screen and (max-width: 525px) {
+        left: -10px;
+        float: unset;
+    }
+}
+
+.dashboard-weather-bottom {
+
+}
+
+.locations {
+    text-align: center;
+}
+
+.locations a {
+    color: rgb(100, 100, 100);
+}
+
+.locations a:hover {
+    color: rgb(100, 100, 100);
+}
+
+.location {
+    position: relative;
+    display: inline-block;
+    width: 245px;
+    height: 250px;
+    @media screen and (max-width: 830px) {
+        width: 134px;
+        height: 137px;
+    }
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(55, 59, 62);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.location:hover {
+    box-shadow: 0 0 20px 0 rgba(105, 165, 85, 0.95);
+}
+
+.location-title {
+    text-align: center;
+    font-size: 2.0em;
+    padding-bottom: 4px;
+    @media screen and (max-width: 830px) {
+        font-size: 1.0em;
+        padding-top: 2px;
+        padding-bottom: 5px;
+    }
+    @media screen and (min-width: 831px) {
+        padding-bottom: 7px;
+    }
+    margin-bottom: 20px;
+    background-color: rgba(115, 143, 100, 0.9);
+    color: #c3e4a3;
+}
+
+.location-icon {
+    text-align: center;
+}
+
+.location-icon i {
+    color: #99ac97;
+    font-size: 5em;
+    @media screen and (max-width: 830px) {
+        font-size: 2em;
+    }
+    @media screen and (min-width: 831px) {
+        margin-top: 25px;
+    }
+}
+
+.location-footer {
+    position: relative;
+    bottom: -30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+    text-align: left;
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 54, 59);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    @media screen and (max-width: 830px) {
+        font-size: 0.75em;
+        bottom: -15px;
+    }
+}
+
+.location-footer-count-desktop {
+    display: none;
+    @media screen and (min-width: 850px) {
+        display: inherit;
+    }
+}
+
+.location-footer-count-mobile {
+    display: none;
+    @media screen and (max-width: 850px) {
+        display: inherit;
+    }
+}
+
+.upcoming-tasks-overview {
+    position: relative;
+    text-align: center;
+    margin-bottom: 63px;
+}
+
+.upcoming-tasks-overview h3 {
+    padding-top: 25px;
+    font-size: 2.0em;
+    color: rgb(150, 150, 150);
+}
+
+.upcoming-tasks-overview-items {
+    margin-top: 25px;
+}
+
+.last-added-or-authored-plants {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 5px;
+    background-color: rgb(55, 59, 62);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.last-added-or-authored-plants h3 {
+    padding-top: 15px;
+    font-size: 2.0em;
+    color: rgb(150, 150, 150);
+}
+
+.margin-vertical {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.sorting {
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+}
+
+.sorting-control {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.sorting-control select, .sorting-control input[type=text] {
+    color: rgb(200, 200, 200);
+    background-color: rgba(50, 50, 50, 0.9);
+    border: 1px solid rgb(100, 100, 100);
+    margin-right: 5px;
+}
+
+.sorting-control input[type=text] {
+    height: 27px;
+    border-radius: 290486px;
+    padding-left: 1em;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: rgb(50, 115, 220) !important;
+}
+
+.plants {
+    margin-top: 30px;
+    @media screen and (max-width: 552px) {
+        text-align: center;
+    }
+}
+
+.plants-empty {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.plants-empty-image img {
+    width: 256px;
+    height: 256px;
+}
+
+.plants-empty-text {
+    position: relative;
+    top: -20px;
+    color: rgb(150, 150, 150);
+    font-style: italic;
+    font-size: 1.4em;
+}
+
+.plant-card {
+    position: relative;
+    display: inline-block;
+    width: 245px;
+    @media screen and (max-width: 552px) {
+        width: 141px;
+        height: 222px;
+    }
+    height: 375px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.plant-card:hover {
+    box-shadow: 0 0 20px 0 rgba(105, 165, 85, 0.95);
+}
+
+.plant-card-overlay {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.plant-card-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.plant-card-title {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 69px;
+    padding-top: 17px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(200, 200, 200);
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @media screen and (max-width: 552px) {
+        padding-top: 22px;
+        font-size: 0.9em;
+    }
+}
+
+.plant-card-title-with-hint {
+    padding-top: 7px;
+}
+
+.plant-card-title-longtext {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    @media screen and (max-width: 552px) {
+        padding-top: 12px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+.plant-card-title-first {
+}
+
+.plant-card-title-second {
+    color: rgb(150, 150, 150);
+    font-size: 0.8em;
+}
+
+.plant-card-title-plant-id {
+    position: relative;
+    top: -1px;
+    background-color: rgb(232, 215, 87);
+    color: rgb(10, 10, 10);
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    font-size: 0.67em;
+}
+
+.plant-card-sorting {
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    background-color: rgba(240, 65, 205, 0.75);
+    border: 1px solid rgb(255, 80, 230);
+    border-radius: 5px;
+    font-size: 0.76em;
+    color: rgb(250, 250, 250);
+}
+
+.plant-card-health-state, .plant-card-options {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    z-index: 2;
+}
+
+.plant-card-options {
+    color: rgb(200, 200, 200);
+}
+
+.plant-card-health-state i {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 32%;
+}
+
+.plant-column {
+    @media screen and (min-width: 520px) {
+        padding: 20px;
+    }
+    @media screen and (max-width: 520px) {
+        display: inline-block;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media screen and (max-width: 365px) {
+        display: inline-block;
+        padding-left: unset;
+        padding-right: unset;
+        width: 107% !important;
+    }
+}
+
+.plant-column table {
+    width: 80%;
+    @media screen and (max-width: 786px) {
+        width: 100%;
+    }
+    color: rgb(200, 200, 200);
+}
+
+.plant-column table strong {
+    color: rgb(200, 200, 200);
+}
+
+.plant-column thead {
+    background-color: rgba(104, 145, 194, 0.5);
+}
+
+.plant-column table td {
+    border: 1px solid rgb(200, 200, 200);
+    padding: 10px;
+}
+
+.plant-custom-attribute {
+    position: relative;
+    margin-top: 10px;
+}
+
+.plant-custom-attribute a {
+    color: rgb(0, 145, 215);
+}
+
+.plant-custom-attribute a:hover {
+    color: rgb(0, 145, 215);
+}
+
+.plant-custom-attribute-removal {
+    position: relative;
+    top: 10px;
+    float: right;
+    color: rgb(200, 105, 105) !important;
+}
+
+.plant-custom-attribute-removal:hover {
+    color: rgb(200, 105, 105) !important;
+    text-decoration: underline;
+}
+
+.plant-details-title {
+    position: relative;
+}
+
+.plant-details-title h1 {
+    display: inline-block;
+}
+
+.plant-details-title h2 {
+    position: relative;
+    display: inline-block;
+    top: 14px;
+    font-size: 1.5em;
+    color: rgb(100, 100, 100);
+    float: right;
+}
+
+.is-color-yes, .is-color-ok {
+    color: rgb(115, 214, 103);
+}
+
+.is-color-no, .is-color-danger {
+    color: rgb(212, 67, 67)
+}
+
+.is-not-available {
+    color: rgb(100, 100, 100);
+    font-style: italic;
+}
+
+.is-half-percent {
+    width: 50%;
+}
+
+.plant-notes {
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+    min-height: 75px;
+    //margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(200, 200, 200);
+    background-color: rgba(90, 90, 90, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: 1.0em;
+    border: 1px solid rgb(100, 100, 100);
+    border-left: 3px solid rgb(163, 122, 61);
+    border-radius: 4px;
+}
+
+.plant-notes-content {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+.plant-notes-content pre {
+    background-color: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.plant-notes-content a {
+    color: rgb(111, 185, 235);
+}
+
+.plant-notes-content a:hover {
+    text-decoration: underline;
+}
+
+.plant-notes-edit {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.plant-photo {
+    position: relative;
+    width: 473px;
+    @media screen and (max-width: 512px) {
+        width: 100%;
+        height: 439px;
+    }
+    height: 631px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+}
+
+.plant-photo-overlay {
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.plant-photo-view {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.plant-photo-edit {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.plant-photo-share {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.plant-photo-edit i, .plant-photo-view i, .plant-photo-share i {
+    color: rgb(200, 200, 200);
+}
+
+.plant-state-in-good-standing {
+    color: rgb(115, 214, 103);
+}
+
+.plant-state-overwatered {
+    color: rgb(54, 105, 201);
+}
+
+.plant-state-withering {
+    color: rgb(156, 115, 67);
+}
+
+.plant-state-infected {
+    color: rgb(205, 111, 205);
+}
+
+.plant-state-pest_infestation {
+    color: rgb(173, 83, 83);
+}
+
+.plant-state-transplant_shock {
+    color: rgb(143, 215, 195);
+}
+
+.plant-state-nutritional_deficiency {
+    color: rgb(175, 125, 155);
+}
+
+.plant-state-sunburn {
+    color: rgb(222, 220, 80);
+}
+
+.plant-state-frostbite {
+    color: rgb(255, 255, 255);
+}
+
+.plant-state-root_rot {
+    color: rgb(123, 130, 102);
+}
+
+.plant-button-group a {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.plant-warning {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 510px) {
+        margin-bottom: 30px;
+    }
+    color: rgb(212, 50, 50);
+}
+
+.line-up-frames {
+    @media screen and (min-width: 795px) {
+        display: flex;
+    }
+}
+
+.warning-plants {
+    position: relative;
+    flex: 1;
+    width: 45%;
+    @media screen and (max-width: 796px) {
+        flex: unset;
+        display: inline-block;
+        width: 100%;
+    }
+    margin-top: -10px;
+    margin-bottom: 45px;
+    margin-right: 5px;
+    margin-left: 10px;
+    padding: 15px 15px 15px 15px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    @media screen and (max-width: 512px) {
+        padding-left: 15px;
+        margin-left: unset;
+    }
+    background-color: rgb(55, 59, 62);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.has-warnings {
+    color: rgb(200, 105, 105) !important;
+}
+
+.is-all-ok {
+    padding-top: 41px;
+}
+
+.table-bright-color {
+    background-color: rgb(63, 70, 75);
+}
+
+.warning-plants-title {
+    margin-top: -2px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: rgb(200, 200, 200);
+}
+
+.warning-plants-title-no-margin-bottom {
+    margin-bottom: unset;
+}
+
+.warning-plants-title-centered {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 2px;
+    @media screen and (max-width: 753px) {
+        margin-top: 23px;
+        top: unset;
+        transform: unset;
+    }
+}
+
+.warning-plants-content {
+    position: relative;
+}
+
+.warning-plants-content table {
+    width: 100%;
+}
+
+.warning-plants-content thead {
+    display: none;
+}
+
+.warning-plants-content td {
+    color: rgb(150, 150, 150);
+    border: 1px solid rgb(100, 100, 100);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.history-years {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.history-year {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.history-year a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(30, 30, 30);
+    background-color: rgba(200, 200, 200, 0.5);
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 20px;
+}
+
+.history-year a:hover {
+    color: rgb(30, 30, 30);
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+.history-year-selected a {
+    color: rgb(30, 30, 30);
+    background-color: rgba(220, 220, 220, 0.95);
+}
+
+.history-year-selected a:hover {
+    color: rgb(30, 30, 30);
+    background-color: rgba(250, 250, 250, 0.95);
+}
+
+
+.overdue-tasks {
+    position: relative;
+    flex: 1;
+    width: 45%;
+    margin-top: -10px;
+    margin-bottom: 45px;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-top: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    @media screen and (max-width: 796px) {
+        flex: unset;
+        display: inline-block;
+        width: 100%;
+        margin-left: unset;
+    }
+    @media screen and (max-width: 512px) {
+        padding-left: 15px;
+        padding-right: 2px;
+    }
+    background-color: rgb(55, 59, 62);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.overdue-tasks-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: rgb(200, 105, 105);
+}
+
+.overdue-tasks-content {
+    position: relative;
+}
+
+.overdue-tasks-content table {
+    width: 100%;
+}
+
+.overdue-tasks-content thead {
+    display: none;
+}
+
+.overdue-tasks-content td {
+    color: rgb(150, 150, 150);
+    border: 1px solid rgb(100, 100, 100);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.overdue-tasks-item {
+    color: rgb(150, 150, 150);
+    margin-bottom: 10px;
+}
+
+.log {
+    position: relative;
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 45px;
+    padding: 0 15px 15px 15px;
+    border: 1px solid rgb(43, 43, 43);
+    background-color: rgb(50, 54, 59);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.log-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: rgb(0, 145, 215);
+}
+
+.log-content {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.log-item {
+    color: rgb(150, 150, 150);
+    margin-bottom: 10px;
+}
+
+.log-item a {
+    color: rgb(150, 150, 150);
+}
+
+.log-item a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.log-item strong {
+    
+}
+
+.plant-gallery {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plant-gallery-title {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: rgb(150, 150, 150);
+}
+
+.plant-gallery-upload {
+    margin-bottom: 20px;
+}
+
+.plant-gallery-photos {
+    margin-top: 30px;
+}
+
+.plant-gallery-photos strong {
+    color: rgb(100, 100, 100);
+}
+
+.plant-gallery-item {
+    position: relative;
+    display: inline-block;
+    width: 315px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(73, 79, 83);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.plant-gallery-item-header {
+    padding: 10px;
+}
+
+.plant-gallery-item-header-label {
+    display: inline-block;
+    color: rgb(230, 230, 230);
+}
+
+.plant-gallery-item-header-action {
+    display: inline-block;
+    float: right;
+}
+
+.plant-gallery-item-header-action i.is-action-share, .is-action-edit {
+    color: rgb(200, 200, 200);
+}
+
+.plant-gallery-item-header-action i.is-action-share:hover, i.is-action-edit:hover {
+    color: rgb(220, 220, 220);
+}
+
+.plant-gallery-item-header-action i.is-action-delete {
+    color: rgb(173, 86, 86);
+}
+
+.plant-gallery-item-header-action i.is-action-delete:hover {
+    color: rgb(173, 90, 90);
+}
+
+.plant-gallery-item-photo {
+    position: relative;
+}
+
+.plant-gallery-item-photo-overlay {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 97%;
+}
+
+.plant-gallery-item-photo-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.plant-gallery-item-photo-image {
+}
+
+.plant-gallery-item-photo-overlay .plant-gallery-item-photo-image {
+    visibility: hidden;
+}
+
+.plant-gallery-item-photo-overlay:hover .plant-gallery-item-photo-image {
+    visibility: visible;
+}
+
+.plant-gallery-item-footer {
+    position: relative;
+    top: -3px;
+    padding: 10px;
+    color: rgb(135, 135, 135);
+}
+
+.stats {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.stats-item {
+    position: relative;
+    display: inline-block;
+    width: 243.9px;
+    @media screen and (max-width: 512px) {
+        width: 135px;
+    }
+    height: 130px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(55, 59, 62);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border-left: 2px solid rgb(159, 165, 45);
+}
+
+.stats-item-count {
+    color: rgb(250, 250, 250);
+    font-size: 2.0em;
+    text-align: center;
+}
+
+.stats-item-label {
+    color: rgb(200, 200, 200);
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.plant-tags {
+    position: relative;
+}
+
+.plant-tags-content {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+.plant-tags-edit {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.plant-tags-item {
+    position: relative;
+    display: inline-block;
+    min-width: 125px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 16px;
+    text-align: center;
+    background-color: rgba(123, 123, 123, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.plant-tags-item:hover {
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
+.plant-tags-item a {
+    color: rgb(190, 190, 190);
+}
+
+.plant-tags-item a:hover {
+    color: rgb(230, 230, 230);
+}
+
+.tasks {
+    margin-bottom: 50px;
+}
+
+.task {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    @media screen and (max-width: 580px) {
+        width: 95%;
+    }
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 29px;
+    background-color: rgb(55, 59, 62);
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 4px;
+}
+
+.task-header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: rgb(25, 25, 25);
+}
+
+.task-header-title {
+    position: relative;
+    display: inline-block;
+    font-size: 1.2em;
+    color: rgb(200, 200, 200);
+}
+
+.task-header-action {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.task-header-action a {
+    color: rgb(150, 150, 150);
+}
+
+.task-description {
+    position: relative;
+    height: 150px;
+    margin-bottom: 43px;
+    padding: 10px;
+    font-size: 1.0em;
+    color: rgb(150, 150, 150);
+    overflow-y: auto;
+}
+
+.task-description pre {
+    background-color: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.task-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 0.8em;
+}
+
+.task-footer-date {
+    position: relative;
+    display: inline-block;
+    width: 43%;
+}
+
+.task-footer-due {
+    position: relative;
+    display: inline-block;
+}
+
+.is-task-overdue {
+    color: rgb(212, 50, 50);
+}
+
+.task-footer-action {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.task-footer-action a {
+    color: rgb(150, 150, 150);
+}
+
+.tasks-all-done {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tasks-all-done-image img {
+    width: 256px;
+    height: 256px;
+}
+
+.tasks-all-done-text {
+    color: rgb(120, 215, 105);
+    font-size: 2.0em;
+}
+
+.inventory {
+    margin-bottom: 50px;
+}
+
+.inventory-item-group {
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(200, 200, 200, 0.76);
+    border: 1px solid rgb(90, 90, 90);
+}
+
+.inventory-item {
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(50, 50, 50, 0.76);
+    border: 1px solid rgb(90, 90, 90);
+}
+
+.inventory-item-header {
+    position: relative;
+}
+
+.inventory-item-name {
+    position: relative;
+    display: inline-block;
+    min-width: 50%;
+}
+
+.inventory-item-name a {
+    color: rgb(150, 150, 150);
+}
+
+.inventory-item-name a:hover {
+    color: rgb(150, 150, 150);
+}
+
+.inventory-item-amount {
+    position: relative;
+    display: inline-block;
+}
+
+.inventory-item-amount i {
+    color: rgb(150, 150, 150);
+}
+
+.inventory-item-amount span {
+    color: rgb(215, 215, 215);
+}
+
+.is-inventory-item-empty {
+    color: rgb(212, 50, 50) !important;
+}
+
+.inventory-item-actions {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.inventory-item-actions i {
+    color: rgb(100, 100, 100);
+}
+
+.inventory-item-body {
+    position: relative;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: opacity 1s ease-out;
+    -moz-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
+}
+
+.inventory-item-body.expand {
+    height: auto;
+    opacity: 1;
+}
+
+.inventory-item-description {
+    position: relative;
+    color: rgb(130, 130, 130);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inventory-item-description pre {
+    background-color: inherit;
+    color: inherit;
+    white-space: normal;
+}
+
+.inventory-item-photo {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inventory-item-footer {
+    position: relative;
+    color: rgb(120, 120, 120);
+    margin-top: 10px;
+}
+
+.inventory-item-location {
+    position: relative;
+    display: inline-block;
+}
+
+.inventory-item-author {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.inventory-groups {
+    width: 100%;
+}
+
+.inventory-groups thead td {
+    color: rgb(150, 150, 150);
+}
+
+.inventory-groups.table td {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.inventory-groups a {
+    color: rgb(150, 150, 150);
+}
+
+.inventory-groups a:hover {
+    color: rgb(150, 150, 150);
+    text-decoration: underline;
+}
+
+.calendar-add {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.calendar-add a {
+    width: 200px;
+}
+
+.calendar-menu {
+    position: relative;
+}
+
+.calendar-menu span {
+    color: rgb(150, 150, 150);
+}
+
+.calendar-input {
+    padding: 8px;
+    color: rgb(250, 250, 250);
+    background-color: rgb(50, 50, 50);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+}
+
+.calendar-content {
+    position: relative;
+    margin-top: 30px;
+}
+
+.calendar-link-removal {
+    position: relative;
+    top: 10px;
+    float: right;
+    color: rgb(200, 105, 105);
+}
+
+.calendar-link-removal:hover {
+    color: rgb(200, 105, 105);
+    text-decoration: underline;
+}
+
+.calendar-view {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 59px;
+}
+
+.calendar-view h3 {
+    color: rgb(150, 150, 150);
+    font-size: 2.0em;
+    padding-bottom: 10px;
+}
+
+.weather-forecast {
+    position: relative;
+    margin-top: 40px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+}
+
+.weather-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.weather-header-item {
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.weather-header-item strong {
+    color: rgb(200, 200, 200);
+}
+
+.weather-day {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.weather-day-data {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.weather-day-data-title {
+    position: relative;
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+}
+
+.weather-day-data-icon {
+    position: relative;
+}
+
+.weather-day-data-attribute {
+    position: relative;
+    color: rgb(150, 150, 150);
+}
+
+.is-weather-fill-data {
+    color: rgb(100, 100, 100);
+}
+
+.chat-message {
+    position: relative;
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 10px;
+}
+
+.chat-message-right {
+    margin-left: 10%;
+    background-color: rgba(115, 143, 100, 0.9);
+}
+
+.chat-message-user {
+    position: relative;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    //color: rgb(123, 193, 223);
+}
+
+.chat-message-new {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(212, 130, 67);
+    border: 1px solid rgb(92, 64, 25);
+    color: rgb(250, 250, 250);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    float: right;
+}
+
+.chat-message-content {
+    position: relative;
+}
+
+.chat-message-content pre {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+.chat-message-info {
+    position: relative;
+    margin-top: 10px;
+    font-size: 0.76em;
+    color: rgb(155, 155, 155);
+}
+
+.chat-typing-indicator {
+    display: none;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.chat-typing-indicator.visible {
+    display: block;
+}
+
+.chat-user-list {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    color: rgb(92, 255, 0);
+}
+
+.system-message {
+    position: relative;
+    background-color: rgb(205, 202, 165);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.system-message-left {
+    position: relative;
+    display: inline-block;
+    width: 93%;
+    @media screen and (max-width: 1000px) {
+        width: 80%;
+    }
+}
+
+.system-message-left-new {
+    top: -3px;
+}
+
+.system-message-right {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    @media screen and (max-width: 520px) {
+        top: 55px;
+        vertical-align: top;
+        right: -25px;
+    }
+}
+
+.system-message-context {
+    position: relative;
+    display: inline-block;
+    top: -1px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.system-message-content {
+    position: relative;
+    display: inline-block;
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
+}
+
+.system-message-content a {
+    color: rgb(135, 75, 5);
+}
+
+.system-message-content a:hover {
+    color: rgb(135, 75, 5);
+    text-decoration: underline;
+}
+
+.system-message-new {
+    @media screen and (max-width: 768px) {
+        top: -58px;
+    }
+}
+
+#small-system-messages {
+    position: fixed;
+    z-index: 3;
+    top: 55px;
+    @media screen and (max-width: 512px) {
+        width: 100%;
+    }
+}
+
+.system-message-small {
+    position: relative;
+    top: 12px;
+    left: 12px;
+    @media screen and (max-width: 512px) {
+        width: 100%;
+        left: 0;
+    }
+    background-color: rgb(205, 202, 165);
+    border-radius: 10px;
+    border: 1px solid rgb(250, 250, 250);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.system-message-small-context {
+    font-weight: bold;
+}
+
+.system-message-small-content {
+}
+
+.system-message-small-content a {
+    color: rgb(135, 75, 5);
+}
+
+.system-message-small-content a:hover {
+    color: rgb(135, 75, 5);
+    text-decoration: underline;
+}
+
+.scroll-to-top {
+    position: fixed;
+    z-index: 102;
+    bottom: 12px;
+    right: 12px;
+}
+
+.scroll-to-top-inner {
+    background-color: rgb(80, 80, 80);
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scroll-to-top-inner a {
+    color: rgb(200, 200, 200);
+}
+
+.auth-main {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.auth-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.auth-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+
+.auth-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.auth-header img {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+
+.auth-header h1 {
+    font-size: 2.5em;
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+}
+
+.auth-info {
+    position: relative;
+    margin-bottom: 43px;
+}
+
+.auth-info-error {
+    color: rgb(154, 73, 69);
+}
+
+.auth-info-success {
+    color: rgb(69, 154, 83);
+}
+
+.auth-form {
+    position: relative;
+}
+
+.auth-form input[type=email], .auth-form input[type=password] {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.auth-form input[type=email]::placeholder, .auth-form input[type=password]::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+.auth-form input[type=submit] {
+    width: 100%;
+}
+
+.auth-help {
+    position: relative;
+    margin-top: 20px;
+}
+
+.auth-help a {
+    color: rgb(54, 105, 203);
+}
+
+.auth-help a:hover {
+    color: rgb(54, 105, 203);
+    text-decoration: underline;
+}
+
+.reset-main {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reset-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reset-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+
+.reset-content h1 {
+    margin-bottom: 30px;
+    line-height: 1.0;
+}
+
+.reset-info {
+    position: relative;
+    margin-bottom: 43px;
+}
+
+.reset-info-error {
+    color: rgb(154, 73, 69);
+}
+
+.reset-info-success {
+    color: rgb(69, 154, 83);
+}
+
+.reset-form {
+    position: relative;
+}
+
+.reset-form input[type=email], .reset-form input[type=password] {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.reset-form input[type=email]::placeholder, .reset-form input[type=password]::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+.reset-form input[type=submit] {
+    width: 100%;
+}
+
+.preferences-header {
+    position: relative;
+}
+
+.preferences-header i {
+    color: rgb(150, 150, 150);
+}
+
+.admin-tabs {
+    margin-top: 23px;
+}
+
+.admin-tabs a {
+    color: rgb(200, 200, 200);
+}
+
+.admin-tabs a:hover {
+    color: rgb(230, 230, 230);
+    border-bottom-color: rgb(111, 172, 243);
+}
+
+.admin-environment {
+    position: relative;
+}
+
+.admin-environment h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.admin-environment label, .admin-environment span {
+    color: rgb(150, 150, 150);
+}
+
+.admin-environment input, .admin-environment select {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-media {
+    position: relative;
+    width: 100%;
+}
+
+.admin-media h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.admin-media label {
+    color: rgb(150, 150, 150);
+}
+
+.admin-media input, .admin-backup input {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-media input[type=submit] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-users {
+    position: relative;
+    width: 100%;
+}
+
+.admin-users h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.admin-users-list {
+    position: relative;
+}
+
+.admin-user-account {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.admin-user-account label, .admin-user-account span {
+    color: rgb(150, 150, 150);
+}
+
+.admin-user-account input, .admin-user-account select {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-user-account-item {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.admin-user-account-item-input {
+    width: 30%;
+}
+
+.admin-user-account-actions {
+    position: relative;
+    display: inline-block;
+}
+
+.admin-user-account-item-centered {
+    text-align: center;
+}
+
+.admin-user-account-action-item {
+    position: relative;
+}
+
+.admin-users-created-password {
+    position: relative;
+    color: rgb(220, 220, 220);
+    background-color: rgb(180, 103, 0);
+    border: 1px solid rgb(245, 185, 105);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.admin-users-created-password strong {
+    color: rgb(250, 250, 250);
+}
+
+.admin-users-actions {
+    position: relative;
+    margin-top: 20px;
+}
+
+.admin-locations {
+    position: relative;
+    width: 100%;
+}
+
+.admin-locations h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.admin-locations-list {
+    position: relative;
+}
+
+.admin-location {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.admin-location label, .admin-location span {
+    color: rgb(150, 150, 150);
+}
+
+.admin-location input {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-location-item {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(150, 150, 150);
+}
+
+.admin-location-item-input {
+    width: 30%;
+}
+
+.admin-location-actions {
+    position: relative;
+    display: inline-block;
+}
+
+.admin-location-item-centered {
+    text-align: center;
+}
+
+.admin-location-action-item {
+    position: relative;
+}
+
+.admin-locations-actions {
+    position: relative;
+    margin-top: 20px;
+}
+
+.admin-attributes {
+    color: rgb(150, 150, 150);
+}
+
+.admin-attributes p {
+    color: rgb(150, 150, 150);
+    margin-bottom: 30px;
+}
+
+.admin-calendar-classes {
+    position: relative;
+    width: 100%;
+}
+
+.admin-calendar-classes h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.admin-calendar-classes-list {
+    position: relative;
+}
+
+.admin-calendar-class {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.admin-calendar-class label, .admin-calendar-class span {
+    color: rgb(150, 150, 150);
+}
+
+.admin-calendar-class input {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-calendar-class-item {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.admin-calendar-class-item-input {
+    width: 30%;
+}
+
+.admin-calendar-class-actions {
+    position: relative;
+    display: inline-block;
+}
+
+.admin-calendar-class-item-centered {
+    text-align: center;
+}
+
+.admin-calendar-class-action-item {
+    position: relative;
+}
+
+.admin-calendar-classes-actions {
+    position: relative;
+    margin-top: 20px;
+}
+
+.admin-mail {
+    position: relative;
+}
+
+.admin-mail h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.admin-mail label, .admin-mail span {
+    color: rgb(150, 150, 150);
+}
+
+.admin-mail input, .admin-mail select {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-themes p {
+    color: rgb(150, 150, 150);
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+.admin-themes input, .admin-themes select {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-themes-result {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(185, 255, 164);
+}
+
+.admin-themes-result i {
+    color: rgb(50, 50, 50);
+}
+
+.admin-themes-list {
+    position: relative;
+}
+
+.admin-themes-list table {
+    width: 100%;
+}
+
+.admin-themes-list thead {
+    background-color: rgba(104, 145, 194, 0.5);
+}
+
+.admin-themes-list thead:hover {
+    background-color: rgba(104, 145, 194, 0.5);
+}
+
+.admin-themes-list td {
+    padding: 10px;
+    color: rgb(150, 150, 150);
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.admin-themes-list td i {
+    color: rgb(150, 150, 150);
+}
+
+.admin-themes-list td i:hover {
+    color: rgb(150, 150, 150);
+}
+
+.admin-theme-list-right {
+    width: 5%;
+    text-align: center;
+}
+
+.admin-backup label, .admin-backup span {
+    color: rgb(150, 150, 150);
+}
+
+.admin-backup-result {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(185, 255, 164);
+}
+
+.admin-backup-result i {
+    color: rgb(50, 50, 50);
+}
+
+.admin-backup-result a {
+    color: rgb(15, 150, 43);
+}
+
+.admin-backup-result a:hover {
+    color: rgb(15, 150, 43);
+    text-decoration: underline;
+}
+
+.admin-weather label, .admin-weather span {
+    color: rgb(150, 150, 150);
+}
+
+.admin-weather input, .admin-weather select {
+    color: rgb(150, 150, 150);
+    background-color: rgb(50, 50, 50);
+}
+
+.admin-api table {
+    width: 100%;
+    margin-top: 15px;
+    color: rgb(200, 200, 200);
+}
+
+.admin-api table strong {
+    color: rgb(200, 200, 200);
+}
+
+.admin-api thead {
+    background-color: rgba(104, 145, 194, 0.5);
+}
+
+.admin-api table td {
+    border: 1px solid rgb(200, 200, 200);
+    padding: 10px;
+}
+
+.admin-api table td a {
+    color: rgb(150, 150, 150);
+}
+
+.admin-api table td a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.admin-api table td:last-child {
+    width: 5%;
+    text-align: center;
+}
+
+.admin-info {
+    position: relative;
+}
+
+.admin-info-version {
+    color: rgb(200, 200, 200);
+    font-size: 1.5em;
+}
+
+.admin-info-version-smaller {
+    color: rgb(150, 150, 150);
+    font-size: 0.76em;
+}
+
+.admin-info-extensions {
+    position: relative;
+}
+
+.admin-info-extensions h3 {
+    color: rgb(200, 200, 200);
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.admin-info-extensions a {
+    color: rgb(0, 145, 215);
+}
+
+.admin-info-extensions a:hover {
+    color: rgb(0, 145, 215);
+    text-decoration: underline;
+}
+
+.admin-info-extensions table {
+    width: 100%;
+    margin-top: 15px;
+    color: rgb(200, 200, 200);
+}
+
+.admin-info-extensions table strong {
+    color: rgb(200, 200, 200);
+}
+
+.admin-info-extensions thead {
+    background-color: rgba(104, 145, 194, 0.5);
+}
+
+.admin-info-extensions table td {
+    border: 1px solid rgb(200, 200, 200);
+    padding: 10px;
+}
+
+.admin-info-extensions table td:first-child {
+    width: 10%;
+}
+
+.version-check {
+    position: relative;
+    margin-top: 30px;
+}
+
+.version-info {
+    position: relative;
+    padding: 20px;
+    margin-top: 30px;
+    color: rgb(250, 250, 250);
+    background-color: rgba(102, 202, 160, 0.76);
+    border: 1px solid rgb(150, 236, 200);
+    border-radius: 10px;
+}
+
+.version-info a {
+    color: rgb(132, 255, 123);
+    font-weight: bold;
+}
+
+.version-info a:hover {
+    color: rgb(132, 255, 123);
+    text-decoration: underline;
+}
+
+.bottomnav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(30, 30, 30);
+    @media screen and (min-width: 1087px) {
+        display: none;
+    }
+}
+
+.bottomnav-items {
+    position: relative;
+    display: block;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.bottomnav-item {
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 50px;
+    margin-top: 6px;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.bottomnav-item a {
+    color: rgb(150, 150, 150);
+}
+
+.bottomnav-item a:hover {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
